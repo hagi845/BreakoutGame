@@ -18,6 +18,7 @@ public class Block : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
+        BlockManager.Instance.BlockBreak();
         Destroy(gameObject);
     }
 }
